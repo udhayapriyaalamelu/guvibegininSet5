@@ -6,7 +6,13 @@ public class Pgm30 {
 		// TODO Auto-generated method stub
 Scanner sc=new Scanner(System.in);
 int n=sc.nextInt();
-System.out.println((int)Math.pow(n, 2));
+		if (n % 2 == 0)
+    System.out.println("OK");
+else if (n % 2 < 2.5)
+    n = n - n% 2;
+else
+    n = n + (2 - n % 2);
+System.out.println(n);
 	}
 
 }
